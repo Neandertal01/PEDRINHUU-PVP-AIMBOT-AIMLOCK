@@ -1,13 +1,14 @@
 
 local G2L = {};
 
-print("🟥INICIANDO SCRIPT... - PEDRINHUU PVP🟥")
+print("🟥INICIANDO XIT - PEDRINHUU PVP🟥")
 -- StarterGui.Pedrinhuu Menu PVP
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[Pedrinhuu Menu PVP]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
 
 -- StarterGui.Pedrinhuu Menu PVP.Menu
