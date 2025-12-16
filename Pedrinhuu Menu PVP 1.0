@@ -1,40 +1,41 @@
 
 local G2L = {};
-print("🟥 Carregando Script - Pedrinhuu Menu PVP 🟥")
+
+print("🟥INICIANDO SCRIPT... - PEDRINHUU PVP🟥")
 -- StarterGui.Pedrinhuu Menu PVP
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[Pedrinhuu Menu PVP]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-G2L["1"]["ResetOnSpawn"] = false;
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu
+
+-- StarterGui.Pedrinhuu Menu PVP.Menu
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Size"] = UDim2.new(0, 755, 0, 431);
-G2L["2"]["Position"] = UDim2.new(0.4081, 0, 0.22522, 0);
+G2L["2"]["Position"] = UDim2.new(0.3318, 0, 0.33433, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[PedrinhuuMenu]];
+G2L["2"]["Name"] = [[Menu]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Drag
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Drag
 G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 G2L["3"]["Name"] = [[Drag]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Bypass
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Bypass
 G2L["4"] = Instance.new("LocalScript", G2L["2"]);
 G2L["4"]["Name"] = [[Bypass]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.UICorner
 G2L["5"] = Instance.new("UICorner", G2L["2"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Title 2
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Title 2
 G2L["6"] = Instance.new("TextLabel", G2L["2"]);
 G2L["6"]["TextWrapped"] = true;
 G2L["6"]["BorderSizePixel"] = 0;
@@ -51,7 +52,7 @@ G2L["6"]["Name"] = [[Title 2]];
 G2L["6"]["Position"] = UDim2.new(0, 0, 0.0348, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Title
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Title
 G2L["7"] = Instance.new("TextLabel", G2L["2"]);
 G2L["7"]["TextWrapped"] = true;
 G2L["7"]["BorderSizePixel"] = 0;
@@ -67,7 +68,7 @@ G2L["7"]["Text"] = [[PEDRINHUU PVP]];
 G2L["7"]["Name"] = [[Title]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons
 G2L["8"] = Instance.new("Frame", G2L["2"]);
 G2L["8"]["BorderSizePixel"] = 0;
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
@@ -77,7 +78,7 @@ G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8"]["Name"] = [[Buttons]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Aim
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Aim
 G2L["9"] = Instance.new("TextButton", G2L["8"]);
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["TextSize"] = 14;
@@ -91,17 +92,17 @@ G2L["9"]["Name"] = [[Aim]];
 G2L["9"]["Position"] = UDim2.new(0.09007, 0, 0.11861, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Aim.UICorner
-G2L["a"] = Instance.new("UICorner", G2L["9"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Aim.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Aim.LocalScript
-G2L["b"] = Instance.new("LocalScript", G2L["9"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Aim.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["9"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Visual
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Visual
 G2L["c"] = Instance.new("TextButton", G2L["8"]);
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["TextSize"] = 14;
@@ -115,17 +116,17 @@ G2L["c"]["Name"] = [[Visual]];
 G2L["c"]["Position"] = UDim2.new(0.32848, 0, 0.11861, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Visual.UICorner
-G2L["d"] = Instance.new("UICorner", G2L["c"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Visual.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Visual.LocalScript
-G2L["e"] = Instance.new("LocalScript", G2L["c"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Visual.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.FPS
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.FPS
 G2L["f"] = Instance.new("TextButton", G2L["8"]);
 G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["TextSize"] = 14;
@@ -139,17 +140,17 @@ G2L["f"]["Name"] = [[FPS]];
 G2L["f"]["Position"] = UDim2.new(0.54967, 0, 0.11861, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.FPS.UICorner
-G2L["10"] = Instance.new("UICorner", G2L["f"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.FPS.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.FPS.LocalScript
-G2L["11"] = Instance.new("LocalScript", G2L["f"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.FPS.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["f"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Outros
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Outros
 G2L["12"] = Instance.new("TextButton", G2L["8"]);
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["TextSize"] = 14;
@@ -163,17 +164,17 @@ G2L["12"]["Name"] = [[Outros]];
 G2L["12"]["Position"] = UDim2.new(0.78808, 0, 0.11861, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Outros.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Outros.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Outros.LocalScript
-G2L["14"] = Instance.new("LocalScript", G2L["12"]);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Outros.UICorner
+G2L["14"] = Instance.new("UICorner", G2L["12"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame
 G2L["15"] = Instance.new("Frame", G2L["2"]);
 G2L["15"]["Visible"] = false;
 G2L["15"]["BorderSizePixel"] = 0;
@@ -185,7 +186,7 @@ G2L["15"]["Name"] = [[AimFrame]];
 G2L["15"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimbut
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimbut
 G2L["16"] = Instance.new("TextButton", G2L["15"]);
 G2L["16"]["BorderSizePixel"] = 0;
 G2L["16"]["TextSize"] = 14;
@@ -199,17 +200,17 @@ G2L["16"]["Name"] = [[aimbut]];
 G2L["16"]["Position"] = UDim2.new(0.01589, 0, 0.03957, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimbut.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimbut.LocalScript
 G2L["17"] = Instance.new("LocalScript", G2L["16"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimbut.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimbut.UICorner
 G2L["18"] = Instance.new("UICorner", G2L["16"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimbut.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimbut.TextLabel
 G2L["19"] = Instance.new("TextLabel", G2L["16"]);
 G2L["19"]["TextWrapped"] = true;
 G2L["19"]["BorderSizePixel"] = 0;
@@ -225,7 +226,7 @@ G2L["19"]["Text"] = [[Ativar Aimbot]];
 G2L["19"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimlock
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimlock
 G2L["1a"] = Instance.new("TextButton", G2L["15"]);
 G2L["1a"]["BorderSizePixel"] = 0;
 G2L["1a"]["TextSize"] = 14;
@@ -239,17 +240,17 @@ G2L["1a"]["Name"] = [[aimlock]];
 G2L["1a"]["Position"] = UDim2.new(0.01589, 0, 0.19545, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimlock.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimlock.LocalScript
 G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimlock.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimlock.UICorner
 G2L["1c"] = Instance.new("UICorner", G2L["1a"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimlock.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimlock.TextLabel
 G2L["1d"] = Instance.new("TextLabel", G2L["1a"]);
 G2L["1d"]["TextWrapped"] = true;
 G2L["1d"]["BorderSizePixel"] = 0;
@@ -265,7 +266,7 @@ G2L["1d"]["Text"] = [[Ativar AimLock]];
 G2L["1d"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.auxilio
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.auxilio
 G2L["1e"] = Instance.new("TextButton", G2L["15"]);
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["TextSize"] = 14;
@@ -279,17 +280,17 @@ G2L["1e"]["Name"] = [[auxilio]];
 G2L["1e"]["Position"] = UDim2.new(0.01589, 0, 0.35721, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.auxilio.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.auxilio.LocalScript
 G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.auxilio.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.auxilio.UICorner
 G2L["20"] = Instance.new("UICorner", G2L["1e"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.auxilio.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.auxilio.TextLabel
 G2L["21"] = Instance.new("TextLabel", G2L["1e"]);
 G2L["21"]["TextWrapped"] = true;
 G2L["21"]["BorderSizePixel"] = 0;
@@ -305,7 +306,7 @@ G2L["21"]["Text"] = [[Ativar AimAssist]];
 G2L["21"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.TextLabel
 G2L["22"] = Instance.new("TextLabel", G2L["15"]);
 G2L["22"]["TextWrapped"] = true;
 G2L["22"]["BorderSizePixel"] = 0;
@@ -321,7 +322,7 @@ G2L["22"]["Text"] = [[-=======- AIMBOT CONFIG -=======-]];
 G2L["22"]["Position"] = UDim2.new(0.47947, 0, 0.01418, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Force
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Force
 G2L["23"] = Instance.new("TextBox", G2L["15"]);
 G2L["23"]["Name"] = [[Force]];
 G2L["23"]["BorderSizePixel"] = 0;
@@ -338,12 +339,12 @@ G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["Text"] = [[]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Force.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Force.UICorner
 G2L["24"] = Instance.new("UICorner", G2L["23"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.TextLabel
 G2L["25"] = Instance.new("TextLabel", G2L["15"]);
 G2L["25"]["TextWrapped"] = true;
 G2L["25"]["BorderSizePixel"] = 0;
@@ -359,7 +360,7 @@ G2L["25"]["Text"] = [[Força]];
 G2L["25"]["Position"] = UDim2.new(0.65298, 0, 0.13183, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Range
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Range
 G2L["26"] = Instance.new("TextBox", G2L["15"]);
 G2L["26"]["Name"] = [[Range]];
 G2L["26"]["BorderSizePixel"] = 0;
@@ -376,12 +377,12 @@ G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["26"]["Text"] = [[]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Range.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Range.UICorner
 G2L["27"] = Instance.new("UICorner", G2L["26"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.TextLabel
 G2L["28"] = Instance.new("TextLabel", G2L["15"]);
 G2L["28"]["TextWrapped"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
@@ -397,7 +398,7 @@ G2L["28"]["Text"] = [[Raio]];
 G2L["28"]["Position"] = UDim2.new(0.65298, 0, 0.29359, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Distance
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Distance
 G2L["29"] = Instance.new("TextBox", G2L["15"]);
 G2L["29"]["Name"] = [[Distance]];
 G2L["29"]["BorderSizePixel"] = 0;
@@ -414,12 +415,12 @@ G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["Text"] = [[]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Distance.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Distance.UICorner
 G2L["2a"] = Instance.new("UICorner", G2L["29"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.TextLabel
 G2L["2b"] = Instance.new("TextLabel", G2L["15"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
@@ -435,7 +436,7 @@ G2L["2b"]["Text"] = [[Distancia]];
 G2L["2b"]["Position"] = UDim2.new(0.65298, 0, 0.44065, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Set
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Set
 G2L["2c"] = Instance.new("TextButton", G2L["15"]);
 G2L["2c"]["TextWrapped"] = true;
 G2L["2c"]["BorderSizePixel"] = 0;
@@ -450,12 +451,12 @@ G2L["2c"]["Name"] = [[Set]];
 G2L["2c"]["Position"] = UDim2.new(0.56821, 0, 0.7778, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Set.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Set.UICorner
 G2L["2d"] = Instance.new("UICorner", G2L["2c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.TextLabel
 G2L["2e"] = Instance.new("TextLabel", G2L["15"]);
 G2L["2e"]["TextWrapped"] = true;
 G2L["2e"]["BorderSizePixel"] = 0;
@@ -471,7 +472,7 @@ G2L["2e"]["Text"] = [[-=======- AIMLOCK CONFIG -=======-]];
 G2L["2e"]["Position"] = UDim2.new(0.01589, 0, 0.48771, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Cabeca
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Cabeca
 G2L["2f"] = Instance.new("TextButton", G2L["15"]);
 G2L["2f"]["TextWrapped"] = true;
 G2L["2f"]["BorderSizePixel"] = 0;
@@ -486,17 +487,17 @@ G2L["2f"]["Name"] = [[Cabeca]];
 G2L["2f"]["Position"] = UDim2.new(0.11656, 0, 0.7131, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Cabeca.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Cabeca.LocalScript
 G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Cabeca.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Cabeca.UICorner
 G2L["31"] = Instance.new("UICorner", G2L["2f"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.TextLabel
 G2L["32"] = Instance.new("TextLabel", G2L["15"]);
 G2L["32"]["TextWrapped"] = true;
 G2L["32"]["BorderSizePixel"] = 0;
@@ -512,7 +513,7 @@ G2L["32"]["Text"] = [[Lock in]];
 G2L["32"]["Position"] = UDim2.new(0.1894, 0, 0.58771, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Corpo
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Corpo
 G2L["33"] = Instance.new("TextButton", G2L["15"]);
 G2L["33"]["TextWrapped"] = true;
 G2L["33"]["BorderSizePixel"] = 0;
@@ -527,17 +528,17 @@ G2L["33"]["Name"] = [[Corpo]];
 G2L["33"]["Position"] = UDim2.new(0.11656, 0, 0.81604, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Corpo.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Corpo.LocalScript
 G2L["34"] = Instance.new("LocalScript", G2L["33"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Corpo.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Corpo.UICorner
 G2L["35"] = Instance.new("UICorner", G2L["33"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.NPC
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.NPC
 G2L["36"] = Instance.new("TextButton", G2L["15"]);
 G2L["36"]["TextWrapped"] = true;
 G2L["36"]["BorderSizePixel"] = 0;
@@ -552,12 +553,12 @@ G2L["36"]["Name"] = [[NPC]];
 G2L["36"]["Position"] = UDim2.new(0.60397, 0, 0.64545, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.NPC.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.NPC.UICorner
 G2L["37"] = Instance.new("UICorner", G2L["36"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais
 G2L["38"] = Instance.new("Frame", G2L["2"]);
 G2L["38"]["Visible"] = false;
 G2L["38"]["BorderSizePixel"] = 0;
@@ -569,7 +570,7 @@ G2L["38"]["Name"] = [[Visuais]];
 G2L["38"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.esp
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.esp
 G2L["39"] = Instance.new("TextButton", G2L["38"]);
 G2L["39"]["BorderSizePixel"] = 0;
 G2L["39"]["TextSize"] = 14;
@@ -583,17 +584,17 @@ G2L["39"]["Name"] = [[esp]];
 G2L["39"]["Position"] = UDim2.new(0.01457, 0, 0.03918, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.esp.LocalScript
 G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.esp.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.esp.UICorner
 G2L["3b"] = Instance.new("UICorner", G2L["39"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.esp.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.esp.TextLabel
 G2L["3c"] = Instance.new("TextLabel", G2L["39"]);
 G2L["3c"]["TextWrapped"] = true;
 G2L["3c"]["BorderSizePixel"] = 0;
@@ -609,7 +610,7 @@ G2L["3c"]["Text"] = [[Ativar ESP]];
 G2L["3c"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.t esp
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.t esp
 G2L["3d"] = Instance.new("TextButton", G2L["38"]);
 G2L["3d"]["BorderSizePixel"] = 0;
 G2L["3d"]["TextSize"] = 14;
@@ -623,17 +624,17 @@ G2L["3d"]["Name"] = [[t esp]];
 G2L["3d"]["Position"] = UDim2.new(0.01457, 0, 0.20682, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.t esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.t esp.LocalScript
 G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.t esp.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.t esp.UICorner
 G2L["3f"] = Instance.new("UICorner", G2L["3d"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.t esp.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.t esp.TextLabel
 G2L["40"] = Instance.new("TextLabel", G2L["3d"]);
 G2L["40"]["TextWrapped"] = true;
 G2L["40"]["BorderSizePixel"] = 0;
@@ -649,7 +650,7 @@ G2L["40"]["Text"] = [[Ativar Team ESP]];
 G2L["40"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.l esp
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.l esp
 G2L["41"] = Instance.new("TextButton", G2L["38"]);
 G2L["41"]["BorderSizePixel"] = 0;
 G2L["41"]["TextSize"] = 14;
@@ -663,17 +664,17 @@ G2L["41"]["Name"] = [[l esp]];
 G2L["41"]["Position"] = UDim2.new(0.01457, 0, 0.38035, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.l esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.l esp.LocalScript
 G2L["42"] = Instance.new("LocalScript", G2L["41"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.l esp.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.l esp.UICorner
 G2L["43"] = Instance.new("UICorner", G2L["41"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.l esp.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.l esp.TextLabel
 G2L["44"] = Instance.new("TextLabel", G2L["41"]);
 G2L["44"]["TextWrapped"] = true;
 G2L["44"]["BorderSizePixel"] = 0;
@@ -689,7 +690,7 @@ G2L["44"]["Text"] = [[Linhas ESP]];
 G2L["44"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.m esp
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.m esp
 G2L["45"] = Instance.new("TextButton", G2L["38"]);
 G2L["45"]["BorderSizePixel"] = 0;
 G2L["45"]["TextSize"] = 14;
@@ -703,17 +704,17 @@ G2L["45"]["Name"] = [[m esp]];
 G2L["45"]["Position"] = UDim2.new(0.01457, 0, 0.56565, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.m esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.m esp.LocalScript
 G2L["46"] = Instance.new("LocalScript", G2L["45"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.m esp.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.m esp.UICorner
 G2L["47"] = Instance.new("UICorner", G2L["45"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.m esp.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.m esp.TextLabel
 G2L["48"] = Instance.new("TextLabel", G2L["45"]);
 G2L["48"]["TextWrapped"] = true;
 G2L["48"]["BorderSizePixel"] = 0;
@@ -729,7 +730,7 @@ G2L["48"]["Text"] = [[Mostar Times]];
 G2L["48"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.d esp
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.d esp
 G2L["49"] = Instance.new("TextButton", G2L["38"]);
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["TextSize"] = 14;
@@ -743,17 +744,17 @@ G2L["49"]["Name"] = [[d esp]];
 G2L["49"]["Position"] = UDim2.new(0.01457, 0, 0.74212, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.d esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.d esp.LocalScript
 G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.d esp.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.d esp.UICorner
 G2L["4b"] = Instance.new("UICorner", G2L["49"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.d esp.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.d esp.TextLabel
 G2L["4c"] = Instance.new("TextLabel", G2L["49"]);
 G2L["4c"]["TextWrapped"] = true;
 G2L["4c"]["BorderSizePixel"] = 0;
@@ -769,7 +770,7 @@ G2L["4c"]["Text"] = [[Mostar Distancia]];
 G2L["4c"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.mira fixa
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.mira fixa
 G2L["4d"] = Instance.new("TextButton", G2L["38"]);
 G2L["4d"]["BorderSizePixel"] = 0;
 G2L["4d"]["TextSize"] = 14;
@@ -783,17 +784,17 @@ G2L["4d"]["Name"] = [[mira fixa]];
 G2L["4d"]["Position"] = UDim2.new(0.48079, 0, 0.03918, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.mira fixa.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.mira fixa.LocalScript
 G2L["4e"] = Instance.new("LocalScript", G2L["4d"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.mira fixa.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.mira fixa.UICorner
 G2L["4f"] = Instance.new("UICorner", G2L["4d"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.mira fixa.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.mira fixa.TextLabel
 G2L["50"] = Instance.new("TextLabel", G2L["4d"]);
 G2L["50"]["TextWrapped"] = true;
 G2L["50"]["BorderSizePixel"] = 0;
@@ -809,7 +810,7 @@ G2L["50"]["Text"] = [[Mira Fixa]];
 G2L["50"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.SetFov
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.SetFov
 G2L["51"] = Instance.new("TextBox", G2L["38"]);
 G2L["51"]["Name"] = [[SetFov]];
 G2L["51"]["BorderSizePixel"] = 0;
@@ -826,12 +827,12 @@ G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["51"]["Text"] = [[]];
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.SetFov.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.SetFov.UICorner
 G2L["52"] = Instance.new("UICorner", G2L["51"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.FOV
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.FOV
 G2L["53"] = Instance.new("TextButton", G2L["38"]);
 G2L["53"]["BorderSizePixel"] = 0;
 G2L["53"]["TextSize"] = 14;
@@ -845,17 +846,17 @@ G2L["53"]["Name"] = [[FOV]];
 G2L["53"]["Position"] = UDim2.new(0.48079, 0, 0.20524, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.FOV.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.FOV.LocalScript
 G2L["54"] = Instance.new("LocalScript", G2L["53"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.FOV.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.FOV.UICorner
 G2L["55"] = Instance.new("UICorner", G2L["53"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.FOV.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.FOV.TextLabel
 G2L["56"] = Instance.new("TextLabel", G2L["53"]);
 G2L["56"]["TextWrapped"] = true;
 G2L["56"]["BorderSizePixel"] = 0;
@@ -871,7 +872,7 @@ G2L["56"]["Text"] = [[Mudar FOV]];
 G2L["56"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps
 G2L["57"] = Instance.new("Frame", G2L["2"]);
 G2L["57"]["Visible"] = false;
 G2L["57"]["BorderSizePixel"] = 0;
@@ -883,7 +884,7 @@ G2L["57"]["Name"] = [[Fps]];
 G2L["57"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff
 G2L["58"] = Instance.new("TextButton", G2L["57"]);
 G2L["58"]["BorderSizePixel"] = 0;
 G2L["58"]["TextSize"] = 14;
@@ -897,17 +898,17 @@ G2L["58"]["Name"] = [[eff]];
 G2L["58"]["Position"] = UDim2.new(0.01457, 0, 0.03918, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 G2L["59"] = Instance.new("LocalScript", G2L["58"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.UICorner
 G2L["5a"] = Instance.new("UICorner", G2L["58"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.TextLabel
 G2L["5b"] = Instance.new("TextLabel", G2L["58"]);
 G2L["5b"]["TextWrapped"] = true;
 G2L["5b"]["BorderSizePixel"] = 0;
@@ -923,7 +924,7 @@ G2L["5b"]["Text"] = [[Desativar Efeitos]];
 G2L["5b"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff
 G2L["5c"] = Instance.new("TextButton", G2L["57"]);
 G2L["5c"]["BorderSizePixel"] = 0;
 G2L["5c"]["TextSize"] = 14;
@@ -937,17 +938,17 @@ G2L["5c"]["Name"] = [[eff]];
 G2L["5c"]["Position"] = UDim2.new(0.01457, 0, 0.20977, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 G2L["5d"] = Instance.new("LocalScript", G2L["5c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.UICorner
 G2L["5e"] = Instance.new("UICorner", G2L["5c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.TextLabel
 G2L["5f"] = Instance.new("TextLabel", G2L["5c"]);
 G2L["5f"]["TextWrapped"] = true;
 G2L["5f"]["BorderSizePixel"] = 0;
@@ -963,7 +964,7 @@ G2L["5f"]["Text"] = [[Desativar Particulas]];
 G2L["5f"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff
 G2L["60"] = Instance.new("TextButton", G2L["57"]);
 G2L["60"]["BorderSizePixel"] = 0;
 G2L["60"]["TextSize"] = 14;
@@ -977,17 +978,17 @@ G2L["60"]["Name"] = [[eff]];
 G2L["60"]["Position"] = UDim2.new(0.01457, 0, 0.39506, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 G2L["61"] = Instance.new("LocalScript", G2L["60"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.UICorner
 G2L["62"] = Instance.new("UICorner", G2L["60"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.TextLabel
 G2L["63"] = Instance.new("TextLabel", G2L["60"]);
 G2L["63"]["TextWrapped"] = true;
 G2L["63"]["BorderSizePixel"] = 0;
@@ -1003,7 +1004,7 @@ G2L["63"]["Text"] = [[Desativar Sombras]];
 G2L["63"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff
 G2L["64"] = Instance.new("TextButton", G2L["57"]);
 G2L["64"]["BorderSizePixel"] = 0;
 G2L["64"]["TextSize"] = 14;
@@ -1017,17 +1018,17 @@ G2L["64"]["Name"] = [[eff]];
 G2L["64"]["Position"] = UDim2.new(0.01457, 0, 0.57741, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 G2L["65"] = Instance.new("LocalScript", G2L["64"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.UICorner
 G2L["66"] = Instance.new("UICorner", G2L["64"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.TextLabel
 G2L["67"] = Instance.new("TextLabel", G2L["64"]);
 G2L["67"]["TextWrapped"] = true;
 G2L["67"]["BorderSizePixel"] = 0;
@@ -1043,7 +1044,7 @@ G2L["67"]["Text"] = [[Desativar Materiais]];
 G2L["67"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff
 G2L["68"] = Instance.new("TextButton", G2L["57"]);
 G2L["68"]["BorderSizePixel"] = 0;
 G2L["68"]["TextSize"] = 14;
@@ -1057,17 +1058,17 @@ G2L["68"]["Name"] = [[eff]];
 G2L["68"]["Position"] = UDim2.new(0.01457, 0, 0.76565, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 G2L["69"] = Instance.new("LocalScript", G2L["68"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.UICorner
 G2L["6a"] = Instance.new("UICorner", G2L["68"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.TextLabel
 G2L["6b"] = Instance.new("TextLabel", G2L["68"]);
 G2L["6b"]["TextWrapped"] = true;
 G2L["6b"]["BorderSizePixel"] = 0;
@@ -1083,7 +1084,7 @@ G2L["6b"]["Text"] = [[Modo Batata]];
 G2L["6b"]["Position"] = UDim2.new(1, 0, 0, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.FPSDisplay
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.FPSDisplay
 G2L["6c"] = Instance.new("TextLabel", G2L["57"]);
 G2L["6c"]["TextWrapped"] = true;
 G2L["6c"]["BorderSizePixel"] = 0;
@@ -1099,17 +1100,17 @@ G2L["6c"]["Name"] = [[FPSDisplay]];
 G2L["6c"]["Position"] = UDim2.new(0.40643, 0, 0.14818, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.FPSDisplay.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.FPSDisplay.LocalScript
 G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.FPSDisplay.UICorner
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.FPSDisplay.UICorner
 G2L["6e"] = Instance.new("UICorner", G2L["6c"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.TextLabel
 G2L["6f"] = Instance.new("TextLabel", G2L["57"]);
 G2L["6f"]["TextWrapped"] = true;
 G2L["6f"]["BorderSizePixel"] = 0;
@@ -1125,7 +1126,7 @@ G2L["6f"]["Text"] = [[FPS]];
 G2L["6f"]["Position"] = UDim2.new(0.42384, 0, 0.03771, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers
 G2L["70"] = Instance.new("Frame", G2L["2"]);
 G2L["70"]["BorderSizePixel"] = 0;
 G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1136,7 +1137,7 @@ G2L["70"]["Name"] = [[Outers]];
 G2L["70"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.TextLabel
 G2L["71"] = Instance.new("TextLabel", G2L["70"]);
 G2L["71"]["TextWrapped"] = true;
 G2L["71"]["BorderSizePixel"] = 0;
@@ -1152,7 +1153,7 @@ G2L["71"]["Text"] = [[Painel Feito Por:]];
 G2L["71"]["Position"] = UDim2.new(0.02781, 0, 0.03771, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.Pedrinhuu On Top
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.Pedrinhuu On Top
 G2L["72"] = Instance.new("TextLabel", G2L["70"]);
 G2L["72"]["TextWrapped"] = true;
 G2L["72"]["BorderSizePixel"] = 0;
@@ -1169,12 +1170,12 @@ G2L["72"]["Name"] = [[Pedrinhuu On Top]];
 G2L["72"]["Position"] = UDim2.new(0.02781, 0, 0.14947, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.Pedrinhuu On Top.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.Pedrinhuu On Top.LocalScript
 G2L["73"] = Instance.new("LocalScript", G2L["72"]);
 
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.Change Title
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.Change Title
 G2L["74"] = Instance.new("TextLabel", G2L["70"]);
 G2L["74"]["TextWrapped"] = true;
 G2L["74"]["BorderSizePixel"] = 0;
@@ -1191,7 +1192,7 @@ G2L["74"]["Name"] = [[Change Title]];
 G2L["74"]["Position"] = UDim2.new(0.50993, 0, 0.03771, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.TextLabel
 G2L["75"] = Instance.new("TextLabel", G2L["70"]);
 G2L["75"]["TextWrapped"] = true;
 G2L["75"]["BorderSizePixel"] = 0;
@@ -1207,7 +1208,7 @@ G2L["75"]["Text"] = [[Painel Não Atualizado Ainda]];
 G2L["75"]["Position"] = UDim2.new(0.54702, 0, 0.14947, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.TextLabel
 G2L["76"] = Instance.new("TextLabel", G2L["70"]);
 G2L["76"]["TextWrapped"] = true;
 G2L["76"]["BorderSizePixel"] = 0;
@@ -1224,7 +1225,7 @@ G2L["76"]["Text"] = [[Version: V1]];
 G2L["76"]["Position"] = UDim2.new(0.05298, 0, 0.89653, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.TextLabel
 G2L["77"] = Instance.new("TextLabel", G2L["70"]);
 G2L["77"]["TextWrapped"] = true;
 G2L["77"]["BorderSizePixel"] = 0;
@@ -1241,7 +1242,7 @@ G2L["77"]["Text"] = [[Criado em 14/12/2025]];
 G2L["77"]["Position"] = UDim2.new(0.21722, 0, 0.89653, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.TextLabel
 G2L["78"] = Instance.new("TextLabel", G2L["70"]);
 G2L["78"]["TextWrapped"] = true;
 G2L["78"]["BorderSizePixel"] = 0;
@@ -1258,7 +1259,7 @@ G2L["78"]["Text"] = [[Atualizado: Sem Updates]];
 G2L["78"]["Position"] = UDim2.new(0.4649, 0, 0.89653, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.TextLabel
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.TextLabel
 G2L["79"] = Instance.new("TextLabel", G2L["70"]);
 G2L["79"]["TextWrapped"] = true;
 G2L["79"]["BorderSizePixel"] = 0;
@@ -1275,7 +1276,7 @@ G2L["79"]["Text"] = [[PEDRINHUU ON TOP 👑]];
 G2L["79"]["Position"] = UDim2.new(0.72185, 0, 0.89653, 0);
 
 
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Drag
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Drag
 local function C_3()
 local script = G2L["3"];
 	local UserInputService = game:GetService("UserInputService")
@@ -1324,7 +1325,7 @@ local script = G2L["3"];
 	
 end;
 task.spawn(C_3);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Bypass
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Bypass
 local function C_4()
 local script = G2L["4"];
 	local frame = script.Parent
@@ -1351,9 +1352,9 @@ local script = G2L["4"];
 	
 end;
 task.spawn(C_4);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Aim.LocalScript
-local function C_b()
-local script = G2L["b"];
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Aim.LocalScript
+local function C_a()
+local script = G2L["a"];
 	local button = script.Parent
 	local buttonsFrame = button.Parent
 	local screenGui = buttonsFrame.Parent
@@ -1373,10 +1374,10 @@ local script = G2L["b"];
 		aimFrame.Visible = true
 	end)
 end;
-task.spawn(C_b);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Visual.LocalScript
-local function C_e()
-local script = G2L["e"];
+task.spawn(C_a);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Visual.LocalScript
+local function C_d()
+local script = G2L["d"];
 	local button = script.Parent
 	local buttonsFrame = button.Parent
 	local screenGui = buttonsFrame.Parent
@@ -1396,10 +1397,10 @@ local script = G2L["e"];
 		visualsFrame.Visible = true
 	end)
 end;
-task.spawn(C_e);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.FPS.LocalScript
-local function C_11()
-local script = G2L["11"];
+task.spawn(C_d);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.FPS.LocalScript
+local function C_10()
+local script = G2L["10"];
 	local button = script.Parent
 	local buttonsFrame = button.Parent
 	local screenGui = buttonsFrame.Parent
@@ -1419,10 +1420,10 @@ local script = G2L["11"];
 		fpsFrame.Visible = true
 	end)
 end;
-task.spawn(C_11);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Buttons.Outros.LocalScript
-local function C_14()
-local script = G2L["14"];
+task.spawn(C_10);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Buttons.Outros.LocalScript
+local function C_13()
+local script = G2L["13"];
 	local button = script.Parent
 	local buttonsFrame = button.Parent
 	local screenGui = buttonsFrame.Parent
@@ -1442,8 +1443,8 @@ local script = G2L["14"];
 		outersFrame.Visible = true
 	end)
 end;
-task.spawn(C_14);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimbut.LocalScript
+task.spawn(C_13);
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimbut.LocalScript
 local function C_17()
 local script = G2L["17"];
 	local Players = game:GetService("Players")
@@ -1674,7 +1675,7 @@ local script = G2L["17"];
 	
 end;
 task.spawn(C_17);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.aimlock.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.aimlock.LocalScript
 local function C_1b()
 local script = G2L["1b"];
 	local Players = game:GetService("Players")
@@ -1779,7 +1780,7 @@ local script = G2L["1b"];
 	
 end;
 task.spawn(C_1b);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.auxilio.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.auxilio.LocalScript
 local function C_1f()
 local script = G2L["1f"];
 	-- Aim Assist do PEDRINHUU
@@ -1911,7 +1912,7 @@ local script = G2L["1f"];
 	
 end;
 task.spawn(C_1f);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Cabeca.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Cabeca.LocalScript
 local function C_30()
 local script = G2L["30"];
 	script.Parent.Activated:Connect(function()
@@ -1920,7 +1921,7 @@ local script = G2L["30"];
 	
 end;
 task.spawn(C_30);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.AimFrame.Corpo.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.AimFrame.Corpo.LocalScript
 local function C_34()
 local script = G2L["34"];
 	script.Parent.Activated:Connect(function()
@@ -1929,7 +1930,7 @@ local script = G2L["34"];
 	
 end;
 task.spawn(C_34);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.esp.LocalScript
 local function C_3a()
 local script = G2L["3a"];
 	local Players = game:GetService("Players")
@@ -2035,110 +2036,182 @@ local script = G2L["3a"];
 	end)
 end;
 task.spawn(C_3a);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.t esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.t esp.LocalScript
 local function C_3e()
 local script = G2L["3e"];
+	local button = script.Parent
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	
-	local LocalPlayer = Players.LocalPlayer
-	local Button = script.Parent
+	local localPlayer = Players.LocalPlayer
+	local espEnabled = false
+	local espConnections = {}
+	local playerESPs = {}
 	
-	local espAtivo = false
-	local caixas = {}
+	-- Função para criar o ESP visual em um personagem
+	local function createESP(character, teamColor)
+		if playerESPs[character] then return end
 	
-	-- Cria caixa 3D
-	local function criarCaixa(character, player)
-		if caixas[player] then
-			caixas[player]:Destroy()
-		end
+		local highlight = Instance.new("Highlight")
+		highlight.Name = "TeamESP"
+		highlight.Adornee = character
+		highlight.FillColor = teamColor
+		highlight.OutlineColor = teamColor
+		highlight.FillTransparency = 0.5
+		highlight.OutlineTransparency = 0
+		highlight.Parent = character
 	
-		local hrp = character:WaitForChild("HumanoidRootPart", 5)
-		if not hrp then return end
-	
-		local box = Instance.new("BoxHandleAdornment")
-		box.Name = "game.3d"
-		box.Adornee = character
-		box.AlwaysOnTop = true
-		box.ZIndex = 10
-		box.Size = character:GetExtentsSize()
-		box.Transparency = 0.7
-		box.Color3 = player.TeamColor.Color
-		box.Parent = hrp
-	
-		caixas[player] = box
+		playerESPs[character] = highlight
 	end
 	
-	-- Remove todas as caixas
-	local function removerESP()
-		for _, box in pairs(caixas) do
-			if box then
-				box:Destroy()
-			end
-		end
-		table.clear(caixas)
-	end
-	
-	-- Verifica e aplica ESP
-	local function aplicarESP(player)
-		if player == LocalPlayer then return end
-		if player.Team == LocalPlayer.Team then return end
-		if not player.Character then return end
-	
-		criarCaixa(player.Character, player)
-	end
-	
-	-- Atualiza todos
-	local function atualizarTodos()
-		for _, player in ipairs(Players:GetPlayers()) do
-			aplicarESP(player)
+	-- Função para remover ESP de um personagem
+	local function removeESP(character)
+		if playerESPs[character] then
+			playerESPs[character]:Destroy()
+			playerESPs[character] = nil
 		end
 	end
 	
-	-- Player entrou
-	Players.PlayerAdded:Connect(function(player)
-		player.CharacterAdded:Connect(function()
-			if espAtivo then
-				task.wait(0.3)
-				aplicarESP(player)
-			end
-		end)
-	end)
-	
-	-- Player mudou de time
-	Players.PlayerAdded:Connect(function(player)
-		player:GetPropertyChangedSignal("Team"):Connect(function()
-			if espAtivo then
-				removerESP()
-				atualizarTodos()
-			end
-		end)
-	end)
-	
-	-- Atualiza respawn
-	for _, player in ipairs(Players:GetPlayers()) do
-		player.CharacterAdded:Connect(function()
-			if espAtivo then
-				task.wait(0.3)
-				aplicarESP(player)
-			end
-		end)
+	-- Função para verificar se um jogador é de outro time
+	local function isEnemyTeam(player)
+		if not localPlayer.Team or not player.Team then
+			return false
+		end
+		return localPlayer.Team ~= player.Team
 	end
 	
-	-- Clique do botão (toggle)
-	Button.MouseButton1Click:Connect(function()
-		espAtivo = not espAtivo
+	-- Função para aplicar ESP em um jogador específico
+	local function applyESPToPlayer(player)
+		local function setupCharacter(character)
+			if not espEnabled then return end
+			if not isEnemyTeam(player) then return end
 	
-		if espAtivo then
-			atualizarTodos()
+			-- Aguarda o character carregar completamente
+			if not character:FindFirstChild("HumanoidRootPart") then
+				character:WaitForChild("HumanoidRootPart", 5)
+			end
+	
+			local teamColor = player.Team.TeamColor.Color
+			createESP(character, teamColor)
+		end
+	
+		-- Aplica ESP no personagem atual
+		if player.Character then
+			setupCharacter(player.Character)
+		end
+	
+		-- Monitora quando o jogador respawna
+		local charConn = player.CharacterAdded:Connect(function(character)
+			if espEnabled then
+				task.wait(0.1) -- Pequeno delay para garantir que tudo carregou
+				setupCharacter(character)
+			end
+		end)
+	
+		table.insert(espConnections, charConn)
+	end
+	
+	-- Função para atualizar ESP de todos os jogadores
+	local function updateAllESPs()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer then
+				if player.Character then
+					local hasESP = playerESPs[player.Character] ~= nil
+					local shouldHaveESP = isEnemyTeam(player)
+	
+					if shouldHaveESP and not hasESP then
+						-- Adiciona ESP se não tiver
+						local teamColor = player.Team and player.Team.TeamColor.Color or Color3.new(1, 0, 0)
+						createESP(player.Character, teamColor)
+					elseif not shouldHaveESP and hasESP then
+						-- Remove ESP se não deveria ter
+						removeESP(player.Character)
+					end
+				end
+			end
+		end
+	end
+	
+	-- Função para ativar o ESP
+	local function enableESP()
+		espEnabled = true
+	
+		-- Aplica ESP em todos os jogadores existentes
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer then
+				applyESPToPlayer(player)
+			end
+		end
+	
+		-- Monitora novos jogadores entrando
+		local playerAddedConn = Players.PlayerAdded:Connect(function(player)
+			if espEnabled then
+				applyESPToPlayer(player)
+			end
+		end)
+		table.insert(espConnections, playerAddedConn)
+	
+		-- Atualiza ESP quando o jogador local muda de time
+		local teamChangedConn = localPlayer:GetPropertyChangedSignal("Team"):Connect(function()
+			if espEnabled then
+				task.wait(0.1)
+				updateAllESPs()
+			end
+		end)
+		table.insert(espConnections, teamChangedConn)
+	
+		-- Monitora mudanças de time dos outros jogadores
+		local updateConn = RunService.Heartbeat:Connect(function()
+			if espEnabled then
+				for _, player in pairs(Players:GetPlayers()) do
+					if player ~= localPlayer and player.Character then
+						local esp = playerESPs[player.Character]
+						local shouldHave = isEnemyTeam(player)
+	
+						if shouldHave and not esp then
+							local teamColor = player.Team and player.Team.TeamColor.Color or Color3.new(1, 0, 0)
+							createESP(player.Character, teamColor)
+						elseif not shouldHave and esp then
+							removeESP(player.Character)
+						elseif esp and player.Team then
+							-- Atualiza cor se mudou de time
+							esp.FillColor = player.Team.TeamColor.Color
+							esp.OutlineColor = player.Team.TeamColor.Color
+						end
+					end
+				end
+			end
+		end)
+		table.insert(espConnections, updateConn)
+	end
+	
+	-- Função para desativar o ESP
+	local function disableESP()
+		espEnabled = false
+	
+		-- Remove todos os ESPs ativos
+		for character, _ in pairs(playerESPs) do
+			removeESP(character)
+		end
+	
+		-- Desconecta todos os eventos
+		for _, conn in pairs(espConnections) do
+			conn:Disconnect()
+		end
+		espConnections = {}
+	end
+	
+	-- Evento de clique no botão (toggle)
+	button.MouseButton1Click:Connect(function()
+		if espEnabled then
+			disableESP()
 		else
-			removerESP()
+			enableESP()
 		end
 	end)
-	
 end;
 task.spawn(C_3e);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.l esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.l esp.LocalScript
 local function C_42()
 local script = G2L["42"];
 	local button = script.Parent
@@ -2219,7 +2292,7 @@ local script = G2L["42"];
 	
 end;
 task.spawn(C_42);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.m esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.m esp.LocalScript
 local function C_46()
 local script = G2L["46"];
 	local Players = game:GetService("Players")
@@ -2328,136 +2401,172 @@ local script = G2L["46"];
 	
 end;
 task.spawn(C_46);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.d esp.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.d esp.LocalScript
 local function C_4a()
 local script = G2L["4a"];
+	local button = script.Parent
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	
-	local LocalPlayer = Players.LocalPlayer
-	local Button = script.Parent
+	local localPlayer = Players.LocalPlayer
+	local distanceEnabled = false
+	local distanceConnections = {}
+	local playerDistances = {}
 	
-	local espAtivo = false
-	local billboards = {}
-	local updateConnection
+	-- Função para criar o display de distância
+	local function createDistanceDisplay(character)
+		if playerDistances[character] then return end
 	
-	-- Remove Billboard
-	local function remover(player)
-		if billboards[player] then
-			billboards[player]:Destroy()
-			billboards[player] = nil
-		end
-	end
+		local rootPart = character:FindFirstChild("HumanoidRootPart")
+		if not rootPart then return end
 	
-	-- Cria BillboardGui de distância
-	local function criarDistancia(player, character)
-		if not espAtivo then return end
-		if player == LocalPlayer then return end
-	
-		remover(player)
-	
-		local hrp = character:WaitForChild("HumanoidRootPart", 5)
-		if not hrp then return end
-	
+		-- Cria o BillboardGui
 		local billboard = Instance.new("BillboardGui")
-		billboard.Name = "DistanceESP"
-		billboard.Adornee = hrp
-		billboard.Size = UDim2.new(0, 120, 0, 30)
-		billboard.StudsOffset = Vector3.new(0, -3, 0) -- abaixo do player
+		billboard.Name = "DistanceDisplay"
+		billboard.Adornee = rootPart
+		billboard.Size = UDim2.new(0, 80, 0, 25)
+		billboard.StudsOffset = Vector3.new(0, -3, 0)
 		billboard.AlwaysOnTop = true
-		billboard.Parent = hrp
+		billboard.Parent = character
 	
-		local text = Instance.new("TextLabel")
-		text.Size = UDim2.new(1, 0, 1, 0)
-		text.BackgroundTransparency = 1
-		text.TextScaled = true
-		text.Font = Enum.Font.GothamBold
-		text.TextStrokeTransparency = 0.4
-		text.TextColor3 = Color3.fromRGB(255, 255, 255)
-		text.Parent = billboard
+		-- Cria o texto
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Size = UDim2.new(1, 0, 1, 0)
+		textLabel.BackgroundTransparency = 0.5
+		textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		textLabel.TextStrokeTransparency = 0.5
+		textLabel.TextScaled = true
+		textLabel.Font = Enum.Font.GothamBold
+		textLabel.Text = "0m"
+		textLabel.Parent = billboard
 	
-		billboards[player] = {
-			gui = billboard,
-			label = text
+		-- Arredonda as bordas
+		local corner = Instance.new("UICorner")
+		corner.CornerRadius = UDim.new(0, 4)
+		corner.Parent = textLabel
+	
+		playerDistances[character] = {
+			billboard = billboard,
+			label = textLabel
 		}
 	end
 	
-	-- Atualiza distância em tempo real
-	local function atualizarDistancias()
-		if not espAtivo then return end
+	-- Função para remover display de distância
+	local function removeDistanceDisplay(character)
+		if playerDistances[character] then
+			playerDistances[character].billboard:Destroy()
+			playerDistances[character] = nil
+		end
+	end
 	
-		local char = LocalPlayer.Character
-		if not char then return end
+	-- Função para calcular e atualizar distâncias
+	local function updateDistances()
+		local localChar = localPlayer.Character
+		if not localChar then return end
 	
-		local localHRP = char:FindFirstChild("HumanoidRootPart")
-		if not localHRP then return end
+		local localRoot = localChar:FindFirstChild("HumanoidRootPart")
+		if not localRoot then return end
 	
-		for player, data in pairs(billboards) do
-			if player.Character and data.gui then
-				local hrp = player.Character:FindFirstChild("HumanoidRootPart")
-				if hrp then
-					local dist = (localHRP.Position - hrp.Position).Magnitude
-					data.label.Text = math.floor(dist) .. " studs"
+		for character, data in pairs(playerDistances) do
+			if character and character.Parent then
+				local targetRoot = character:FindFirstChild("HumanoidRootPart")
+				if targetRoot then
+					local distance = (localRoot.Position - targetRoot.Position).Magnitude
+					local distanceInMeters = math.floor(distance)
+					data.label.Text = distanceInMeters .. "m"
 				end
+			else
+				-- Remove se o personagem foi destruído
+				removeDistanceDisplay(character)
 			end
 		end
 	end
 	
-	-- Ativa ESP
-	local function ativarESP()
-		for _, player in ipairs(Players:GetPlayers()) do
-			if player.Character then
-				criarDistancia(player, player.Character)
+	-- Função para aplicar display em um jogador
+	local function applyDistanceToPlayer(player)
+		local function setupCharacter(character)
+			if not distanceEnabled then return end
+	
+			-- Aguarda o character carregar
+			if not character:FindFirstChild("HumanoidRootPart") then
+				character:WaitForChild("HumanoidRootPart", 5)
 			end
 	
-			player.CharacterAdded:Connect(function(char)
-				if espAtivo then
-					task.wait(0.2)
-					criarDistancia(player, char)
-				end
-			end)
+			createDistanceDisplay(character)
 		end
 	
-		updateConnection = RunService.RenderStepped:Connect(atualizarDistancias)
-	end
-	
-	-- Desativa ESP
-	local function desativarESP()
-		if updateConnection then
-			updateConnection:Disconnect()
-			updateConnection = nil
+		-- Aplica no personagem atual
+		if player.Character then
+			setupCharacter(player.Character)
 		end
 	
-		for _, data in pairs(billboards) do
-			if data.gui then data.gui:Destroy() end
-		end
-		table.clear(billboards)
-	end
-	
-	-- Player entrou
-	Players.PlayerAdded:Connect(function(player)
-		player.CharacterAdded:Connect(function(char)
-			if espAtivo then
-				task.wait(0.2)
-				criarDistancia(player, char)
+		-- Monitora respawn
+		local charConn = player.CharacterAdded:Connect(function(character)
+			if distanceEnabled then
+				task.wait(0.1)
+				setupCharacter(character)
 			end
 		end)
-	end)
 	
-	-- Clique do botão (Toggle)
-	Button.MouseButton1Click:Connect(function()
-		espAtivo = not espAtivo
+		table.insert(distanceConnections, charConn)
+	end
 	
-		if espAtivo then
-			ativarESP()
+	-- Função para ativar os displays
+	local function enableDistance()
+		distanceEnabled = true
+	
+		-- Aplica em todos os jogadores existentes
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer then
+				applyDistanceToPlayer(player)
+			end
+		end
+	
+		-- Monitora novos jogadores
+		local playerAddedConn = Players.PlayerAdded:Connect(function(player)
+			if distanceEnabled then
+				applyDistanceToPlayer(player)
+			end
+		end)
+		table.insert(distanceConnections, playerAddedConn)
+	
+		-- Atualiza distâncias continuamente
+		local updateConn = RunService.RenderStepped:Connect(function()
+			if distanceEnabled then
+				updateDistances()
+			end
+		end)
+		table.insert(distanceConnections, updateConn)
+	end
+	
+	-- Função para desativar os displays
+	local function disableDistance()
+		distanceEnabled = false
+	
+		-- Remove todos os displays
+		for character, _ in pairs(playerDistances) do
+			removeDistanceDisplay(character)
+		end
+	
+		-- Desconecta eventos
+		for _, conn in pairs(distanceConnections) do
+			conn:Disconnect()
+		end
+		distanceConnections = {}
+	end
+	
+	-- Evento de clique no botão (toggle)
+	button.MouseButton1Click:Connect(function()
+		if distanceEnabled then
+			disableDistance()
 		else
-			desativarESP()
+			enableDistance()
 		end
 	end)
-	
 end;
 task.spawn(C_4a);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.mira fixa.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.mira fixa.LocalScript
 local function C_4e()
 local script = G2L["4e"];
 	-- Center Dot controlável por botão
@@ -2525,7 +2634,7 @@ local script = G2L["4e"];
 	
 end;
 task.spawn(C_4e);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Visuais.FOV.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Visuais.FOV.LocalScript
 local function C_54()
 local script = G2L["54"];
 	local button = script.Parent
@@ -2547,7 +2656,7 @@ local script = G2L["54"];
 	
 end;
 task.spawn(C_54);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 local function C_59()
 local script = G2L["59"];
 	local Lighting = game:GetService("Lighting")
@@ -2611,7 +2720,7 @@ local script = G2L["59"];
 	
 end;
 task.spawn(C_59);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 local function C_5d()
 local script = G2L["5d"];
 	local button = script.Parent
@@ -2670,7 +2779,7 @@ local script = G2L["5d"];
 	
 end;
 task.spawn(C_5d);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 local function C_61()
 local script = G2L["61"];
 	local Lighting = game:GetService("Lighting")
@@ -2709,7 +2818,7 @@ local script = G2L["61"];
 	
 end;
 task.spawn(C_61);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 local function C_65()
 local script = G2L["65"];
 	local button = script.Parent
@@ -2763,7 +2872,7 @@ local script = G2L["65"];
 	
 end;
 task.spawn(C_65);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.eff.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.eff.LocalScript
 local function C_69()
 local script = G2L["69"];
 	-- SERVIÇOS
@@ -2947,7 +3056,7 @@ local script = G2L["69"];
 	
 end;
 task.spawn(C_69);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Fps.FPSDisplay.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Fps.FPSDisplay.LocalScript
 local function C_6d()
 local script = G2L["6d"];
 	local waitTime = 0.3
@@ -2988,7 +3097,7 @@ local script = G2L["6d"];
 	end)
 end;
 task.spawn(C_6d);
--- StarterGui.Pedrinhuu Menu PVP.PedrinhuuMenu.Outers.Pedrinhuu On Top.LocalScript
+-- StarterGui.Pedrinhuu Menu PVP.Menu.Outers.Pedrinhuu On Top.LocalScript
 local function C_73()
 local script = G2L["73"];
 	local textLabel = script.Parent
@@ -3009,6 +3118,5 @@ local script = G2L["73"];
 end;
 task.spawn(C_73);
 
-print("🟥 Carregado com sucesso! Pedrinhuu Menu PVP 1.0 🟥")
-
+print("✅ PEDRINHUU PVP CARREGADO COM SUCESSO🟥")
 return G2L["1"], require;
